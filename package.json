@@ -1,0 +1,31 @@
+{
+  "name": "myreactdiaryserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start-compiled": "node dist/index.js",
+    "start": "nodemon --watch src -e js --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.5",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.14",
+    "morgan": "^1.9.1",
+    "morgan-body": "^2.4.8",
+    "pbkdf2": "^3.0.17",
+    "randomatic": "^3.1.1"
+  }
+}
